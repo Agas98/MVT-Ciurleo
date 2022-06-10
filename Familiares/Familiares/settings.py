@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'AppFamilia'
+    'AppFamilia',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Familiares.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/agas9/Desktop/Curso Python/Proyectos/ProyectoFamiliares/Familiares/Familiares/Plantillas'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
