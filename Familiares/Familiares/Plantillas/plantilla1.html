@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FamiliaresApp</title>
 </head>
 <body>
-    <h3>Parientes por lado materno:</h3>
+    <h1 style="text-align: center; color: red;">FAMILIARES</h1>
+<section style="display: flex; flex-direction: row; justify-content: space-around;">
     <div class="madre">
+        <h3>Parientes por lado materno:</h3>
         {% for n in madre %}
-
+        
         {{n.nombre}} {{n.apellido}} DNI: {{n.dni}} Fecha de Nacimiento: {{n.fechaNacimiento}}
         <br>
-
-    {% endfor %}
+        
+        {% endfor %}
     </div>
-    <h3>Parientes por lado paterno:</h3>
     <div class="padre">
+        <h3>Parientes por lado paterno:</h3>
         {% for n in padre %}
-
+        
         {{n.nombre}} {{n.apellido}} DNI: {{n.dni}} Fecha de Nacimiento: {{n.fechaNacimiento}}
         <br>
-
-    {% endfor %}
+        
+        {% endfor %}
     </div>
+</section>
 
 </body>
 </html>
