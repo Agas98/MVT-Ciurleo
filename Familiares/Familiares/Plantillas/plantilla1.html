@@ -7,6 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    hola xddd {{nombre}} y {{apellido}}
+    <h3>Parientes por lado materno:</h3>
+    <div class="madre">
+        {% for n in madre %}
+
+        {{n.nombre}} {{n.apellido}} DNI: {{n.dni}} Fecha de Nacimiento: {{n.fechaNacimiento}}
+        <br>
+
+    {% endfor %}
+    </div>
+    <h3>Parientes por lado paterno:</h3>
+    <div class="padre">
+        {% for n in padre %}
+
+        {{n.nombre}} {{n.apellido}} DNI: {{n.dni}} Fecha de Nacimiento: {{n.fechaNacimiento}}
+        <br>
+
+    {% endfor %}
+    </div>
+
 </body>
 </html>
